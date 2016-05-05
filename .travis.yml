@@ -15,5 +15,7 @@ script:
 #after_script:
 #    - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
 
-deploy:
-    tags: true
+branches:
+  only:
+    - master
+    - v1.0
